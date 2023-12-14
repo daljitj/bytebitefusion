@@ -43,20 +43,20 @@ googleAnalytics = ""
 
   # Nav links in the side bar
   [[params.navlinks]]
-  name = "Home"
-  url = "bytebitefusion/content/home"
   home = true
+  name = "Home"
+  url = "bytebitefusion/content/home/"
 
 
  [[params.navlinks]]
   name = "Burgers"
-  url = "bytebitefusion/content/burgers"
+  url = "bytebitefusion/content/burgers/"
 
  [[params.navlinks]]
   name = "Pizza"
-  url = "bytebitefusion/content/pizza"
+  url = "bytebitefusion/content/pizza/"
 
  [[params.navlinks]]
   name = "About"
-  url = "bytebitefusion/content/about"
+  url = "bytebitefusion/content/about/"
 
