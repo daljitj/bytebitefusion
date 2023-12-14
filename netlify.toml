@@ -1,7 +1,6 @@
 [build]
-  base = "bytebitefusion/"
-  command = "hugo --gc --minify"
-  publish = "bytebitefusion/"
+publish = "bytebitefusion"
+command = "hugo -v --gc --minify"
 
 [context.production.environment]
 HUGO_VERSION = "0.121.0"
