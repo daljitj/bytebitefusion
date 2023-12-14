@@ -126,6 +126,7 @@ cat(md_file, file = paste0("C:\\Users\\dalji\\OneDrive\\Documents\\R\\bytebitefu
 generate_post <- function(category,cuisine) {
   
 print(cuisine)
+print(category)
 
 print("Writing Description and Recipe")
     
@@ -173,7 +174,7 @@ cat(md_file, file = paste0("C:\\Users\\dalji\\OneDrive\\Documents\\R\\bytebitefu
 }
 
 
-generate_post("burgers",sample(cuisines, size = 1))
+generate_post("pizza",sample(cuisines, size = 1))
 
 
 # loop for multiple
