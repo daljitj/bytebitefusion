@@ -1,7 +1,7 @@
 +++ 
 showonlyimage = true 
 draft = false 
-image = 'static/img/beijing-style_lamb_burgers.png'
+image = 'beijing-style_lamb_burgers.png'
 date = '2023-12-14 13:31:27.428457' 
 title = 'Beijing-Style Lamb Burgers' 
 weight = 0
