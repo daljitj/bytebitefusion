@@ -175,9 +175,14 @@ cat(md_file, file = paste0("C:\\Users\\dalji\\OneDrive\\Documents\\R\\bytebitefu
 
 generate_post("burgers",sample(cuisines, size = 1))
 
-# genereate mulitple
-lapply("burgers",c(sample(cuisines, size = 5)))
 
+# loop for multiple
+
+for (i in c(sample(cuisines, size = 5))) {
+  
+  generate_post("burgers",i)
+  
+}
 
 ```
 
