@@ -1,7 +1,7 @@
 +++ 
 showonlyimage = false 
 draft = false 
-image = '/static/img/grumpy_gardening_badger.png' 
+image = '/img/grumpy_gardening_badger.png' 
 date = '2023-12-14 00:31:17.030039' 
 title = 'Lahori Style Spicy Lamb Burgers' 
 weight = 1
@@ -19,7 +19,7 @@ Each bite of the Lahori Style Spicy Lamb Burger is a delightful orchestra of fla
 
 Indulge in the decadence of the Lahori Style Spicy Lamb Burgers, where rustic street food charm meets modern gourmet sophistication, where every bite is an invitation to embrace spice and everything nice! 
 
-![](/static/img/grumpy_gardening_badger.png)
+![](/img/grumpy_gardening_badger.png)
 
 Ingredients: 
 - 500 Grams Ground Lamb
