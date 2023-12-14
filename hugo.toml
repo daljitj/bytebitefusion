@@ -1,5 +1,5 @@
 
-baseurl = 'https://daljitj.github.io/bytebitefusion/'
+baseurl = "https://bytebitefusion.com/"
 languageCode = 'en-us'
 title = 'ByteBiteFusion'
 theme = "hugo-creative-portfolio-theme"
@@ -43,20 +43,20 @@ googleAnalytics = ""
 
   # Nav links in the side bar
   [[params.navlinks]]
-  home = true
   name = "Home"
-  url = "bytebitefusion/content/home/"
+  url = "home/"
+  home = true
 
 
  [[params.navlinks]]
   name = "Burgers"
-  url = "bytebitefusion/content/burgers/"
+  url = "burgers/"
 
  [[params.navlinks]]
   name = "Pizza"
-  url = "bytebitefusion/content/pizza/"
+  url = "pizza/"
 
  [[params.navlinks]]
   name = "About"
-  url = "bytebitefusion/content/about/"
+  url = "about/"
 

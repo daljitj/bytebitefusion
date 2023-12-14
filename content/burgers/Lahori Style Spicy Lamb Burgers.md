@@ -1,9 +1,9 @@
 +++ 
 showonlyimage = true 
 draft = false 
-image = "img/burgers/grumpy gardening badger.png" 
-date = "2023-12-13 23:45:48.498053" 
-title = "Lahori Style Spicy Lamb Burgers" 
+image = 'static/img/burgers/grumpy_gardening_badger.png' 
+date = '2023-12-14 00:31:17.030039' 
+title = 'Lahori Style Spicy Lamb Burgers' 
 weight = 0
 +++ 
  
@@ -17,9 +17,11 @@ The lamb burgers are then sandwiched between fluffy, lightly toasted brioche bun
 
 Each bite of the Lahori Style Spicy Lamb Burger is a delightful orchestra of flavors. Spicy, sweet, smoky, tangy, and a plethora of unrefined, rustic, yet elegantly amalgamated flavors make this burger an enchanting exploration of Pakistani street food.
 
-Indulge in the decadence of the Lahori Style Spicy Lamb Burgers, where rustic street food charm meets modern gourmet sophistication, where every bite is an invitation to embrace spice and everything nice!Title: Lahori Style Spicy Lamb Burgers
+Indulge in the decadence of the Lahori Style Spicy Lamb Burgers, where rustic street food charm meets modern gourmet sophistication, where every bite is an invitation to embrace spice and everything nice! 
 
-Ingredients:
+![This is me](grumpy_gardening_badger.png)
+
+Ingredients: 
 - 500 Grams Ground Lamb
 - 1 Red Onion (Finely sliced)
 - 2 Jalapeno peppers (Finely diced)
@@ -61,3 +63,6 @@ Instructions:
 Enjoy your Lahori-style spicy lamb burgers! They are richly flavored with authentic spices and are bound to be a hit!
 
 Please note: You can adjust the amount of spices and jalapenos as per your taste and spice level.
+
+
+ 
