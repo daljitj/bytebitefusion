@@ -15,7 +15,7 @@ googleAnalytics = ""
   # Use custom.css for your custom styling
   style = "red"
   description = "Describe your website"
-  copyright = "&copy;2023 Your name or company"
+  copyright = "&copy;2023 ByteBiteFusion"
   sidebarAbout = [
     "Using AI to imagine regional twists on common foods"
   ]
