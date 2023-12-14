@@ -126,7 +126,9 @@ cat(md_file, file = paste0("C:\\Users\\dalji\\OneDrive\\Documents\\R\\bytebitefu
 generate_post <- function(category,cuisine) {
   
 print(cuisine)
-  
+
+print("Writing Description and Recipe")
+    
 recipe <- ask_chatgpt(paste0("Give a recipe for burgers in the style of ",cuisine))
 title <- sub("\n.*", "", recipe)
 title <- sub("Recipe: ", "", title)
@@ -136,7 +138,12 @@ recipe_only <- sub(".*Ingredients:", "Ingredients: ", recipe)
   
 description <- ask_chatgpt(paste0("Give a detailed and stylish description to go along with the recipe for ",title))
 
+print("Generating Image")
+
 create_and_download_image(paste0("Create a ultra realistic photo of a plated ",title," in an appetizing style for a food blog, professional food photography, 15mm"),paste0("static/",title,".png"))
+
+print("Stitching Markdown File")
+
   
 header <- paste0("+++ title: '",title,"' 
            author: 'Daljit Singh Johal'
@@ -147,7 +154,7 @@ header <- paste0("+++ title: '",title,"'
 md_file <- paste0("+++ 
 showonlyimage = true 
 draft = false 
-image = 'static/img/",title,"'.png
+image = 'static/img/",gsub(" ", "_", tolower(title)),"'.png
 date = '", Sys.time(),"' 
 title = '",title, "' 
 weight = 0
@@ -155,7 +162,7 @@ weight = 0
  
 ", description, " 
 
-![Image alt](/",title,".png '300px')
+![Image alt](/",gsub(" ", "_", tolower(title)),".png '300px')
 
 ", recipe_only)
 
