@@ -4,7 +4,7 @@ draft = false
 image = 'static/img/grumpy_gardening_badger.png' 
 date = '2023-12-14 00:31:17.030039' 
 title = 'Lahori Style Spicy Lamb Burgers' 
-weight = 1
+weight = 0
 +++ 
  
 Immerse yourself in a captivating culinary journey with our recipe for Lahori Style Spicy Lamb Burgers. Inspired by the bustling spice markets of Lahore, these sumptuous burgers boast an exotic blend of flavors designed to awaken and tantalize your senses, enticing echoes of far-off destinations.
@@ -19,7 +19,7 @@ Each bite of the Lahori Style Spicy Lamb Burger is a delightful orchestra of fla
 
 Indulge in the decadence of the Lahori Style Spicy Lamb Burgers, where rustic street food charm meets modern gourmet sophistication, where every bite is an invitation to embrace spice and everything nice! 
 
-![alt text](/grumpy_gardening_badger.png "500px")
+![alt text](/grumpy_gardening_badger.png "300px")
 
 Ingredients: 
 - 500 Grams Ground Lamb
