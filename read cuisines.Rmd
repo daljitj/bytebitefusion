@@ -174,14 +174,15 @@ cat(md_file, file = paste0("C:\\Users\\dalji\\OneDrive\\Documents\\R\\bytebitefu
 }
 
 
-generate_post("pizza",sample(cuisines, size = 1))
+
+generate_post("fried_chicken",sample(cuisines, size = 1))
 
 
 # loop for multiple
 
-for (i in c(sample(cuisines, size = 5))) {
+for (i in c(sample(cuisines, size = 3))) {
   
-  generate_post("burgers",i)
+  generate_post("fried_chicken",i)
   
 }
 
