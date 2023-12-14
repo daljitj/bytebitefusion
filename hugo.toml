@@ -1,5 +1,5 @@
 
-baseurl = 'https://daljitj.github.io/bytebitefusion/home/'
+baseurl = 'https://daljitj.github.io/bytebitefusion/'
 languageCode = 'en-us'
 title = 'ByteBiteFusion'
 theme = "hugo-creative-portfolio-theme"
