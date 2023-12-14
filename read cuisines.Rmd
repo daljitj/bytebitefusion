@@ -7,7 +7,7 @@ library(httr)
 library(stringr)
 
 # api key
-api_key <- "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"
+api_key <- "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"
 
 
 # Calls the ChatGPT API with the given prompt and returns the answer
@@ -129,6 +129,7 @@ recipe <- ask_chatgpt(paste0("Give a recipe for burgers in the style of ",cuisin
 title <- sub("\n.*", "", recipe)
 title <- sub("Recipe: ", "", title)
 title <- sub("Title: ", "", title)
+title <- sub("Recipe for ", "", title)
 recipe_only <- sub(".*Ingredients:", "Ingredients: ", recipe)
   
 description <- ask_chatgpt(paste0("Give a detailed and stylish description to go along with the recipe for ",title))

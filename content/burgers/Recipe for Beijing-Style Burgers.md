@@ -1,7 +1,7 @@
 +++ 
 showonlyimage = true 
 draft = false 
-image = 'static/img/Recipe for Beijing-Style Burgers.png'
+image = 'static/img/Beijing-Style Burgers.png'
 date = '2023-12-14 12:55:43.585694' 
 title = 'Recipe for Beijing-Style Burgers' 
 weight = 0
@@ -19,7 +19,7 @@ The toppings embody the East-meets-West interpretation as well. Sharp, pickled c
 
 This Beijing-style burger recipe transcends the geographies and brilliantly binds two distinctive culinary philosophies into one ambrosial package. Just like in Beijing, each burger is a celebration of ancient cultural influences and modern experimentation. Enjoy this East-meets-West creation that respects traditions while embracing exciting, gastronomic innovation. 
 
-![Image alt](/Recipe for Beijing-Style Burgers.png '300px')
+![Image alt](/Beijing-Style Burgers.png '300px')
 
 Ingredients: 
 
