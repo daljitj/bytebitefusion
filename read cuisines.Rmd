@@ -129,7 +129,7 @@ print(cuisine)
 
 print("Writing Description and Recipe")
     
-recipe <- ask_chatgpt(paste0("Give a recipe for burgers in the style of ",cuisine))
+recipe <- ask_chatgpt(paste0("Give a recipe for ",category," in the style of ",cuisine))
 title <- sub("\n.*", "", recipe)
 title <- sub("Recipe: ", "", title)
 title <- sub("Title: ", "", title)
@@ -154,7 +154,7 @@ header <- paste0("+++ title: '",title,"'
 md_file <- paste0("+++ 
 showonlyimage = true 
 draft = false 
-image = 'static/img/",gsub(" ", "_", tolower(title)),".png'
+image = '",gsub(" ", "_", tolower(title)),".png'
 date = '", Sys.time(),"' 
 title = '",title, "' 
 weight = 0
@@ -174,6 +174,9 @@ cat(md_file, file = paste0("C:\\Users\\dalji\\OneDrive\\Documents\\R\\bytebitefu
 
 
 generate_post("burgers",sample(cuisines, size = 1))
+
+# genereate mulitple
+lapply("burgers",c(sample(cuisines, size = 5)))
 
 
 ```
