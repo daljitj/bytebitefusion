@@ -1,0 +1,23 @@
+
+
+```{r}
+
+# Load the required library
+library(rvest)
+
+# Specify the URL of the Wikipedia page
+url <- "https://en.wikipedia.org/wiki/List_of_cuisines"
+
+# Read the HTML content of the page
+page <- read_html(url)
+
+# Extract the table containing the list of cuisines
+table <- html_nodes(page, "div-col")
+
+# Extract the cuisine names from the table
+cuisine_names <- table$Cuisine
+
+# Print the list of cuisines
+print(cuisine_names)
+
+```

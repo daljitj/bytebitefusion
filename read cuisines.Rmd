@@ -1,0 +1,173 @@
+
+## function for chatgpt prompting
+
+```{r}
+
+library(httr)
+library(stringr)
+
+# api key
+api_key <- "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"
+
+
+# Calls the ChatGPT API with the given prompt and returns the answer
+ask_chatgpt <- function(prompt) {
+  response <- POST(
+    url = "https://api.openai.com/v1/chat/completions", 
+    add_headers(Authorization = paste("Bearer", api_key)),
+    content_type_json(),
+    encode = "json",
+    body = list(
+      model = "gpt-4",
+      messages = list(list(
+        role = "user", 
+        content = prompt
+      ))
+    )
+  )
+  str_trim(content(response)$choices[[1]]$message$content)
+}
+
+```
+
+
+## Image generation function
+
+```{r}
+
+
+create_and_download_image <- function(prompt,path) {
+response <- POST(
+  url = "https://api.openai.com/v1/images/generations", 
+  add_headers(Authorization = paste("Bearer", api_key)),
+  content_type_json(),
+  encode = "json",
+  body = list(
+    model = "dall-e-3",
+     prompt=prompt,
+  size="1024x1024",
+  quality="standard",
+  n=1
+  )
+)
+
+
+download.file(content(response)$data[[1]]$url, destfile = path,mode = 'wb')
+  
+}
+
+```
+
+```{r}
+
+cuisines <- read.csv("list_of_cuisines.csv", header=FALSE, stringsAsFactors=FALSE, fileEncoding="latin1")
+cuisines <- cuisines[which(!grepl("Cuisine of ",cuisines$V1)),]
+
+
+```
+
+
+# Prompt for a recipe
+
+```{r}
+
+recipe <- ask_chatgpt(paste0("Give a recipe for burgers in the style of ",sample(cuisines, size = 1)))
+title <- sub("\n.*", "", recipe)
+title <- sub("Recipe: ", "", title)
+title <- sub("Title: ", "", title)
+recipe_only <- sub(".*Ingredients:", "Ingredients: ", recipe)
+  
+description <- ask_chatgpt(paste0("Give a detailed and stylish description to go along with the recipe for ",title))
+
+create_and_download_image(paste0("Create a ultra realistic photo of a plated ",title," in an appetizing style for a food blog, professional food photography, 15mm"),paste0("static/",title,".png"))
+
+```
+
+
+# Write post file
+
+```{r}
+
+header <- paste0("+++ title: '",title,"' 
+           author: 'Daljit Singh Johal'
+           date: ", Sys.Date()," 
+           output: html_document
+          +++") 
+
+md_file <- paste0("+++ 
+showonlyimage = true 
+draft = false 
+image = 'static/img/burgers/grumpy gardening badger.png' 
+date = '", Sys.time(),"' 
+title = '",title, "' 
+weight = 0
++++ 
+ 
+", description, " 
+
+![Image alt](/",title,".png '300px')
+
+", recipe_only)
+
+cat(md_file, file = paste0("C:\\Users\\dalji\\OneDrive\\Documents\\R\\bytebitefusion\\content\\home\\",title,".md"))
+cat(md_file, file = paste0("C:\\Users\\dalji\\OneDrive\\Documents\\R\\bytebitefusion\\content\\",category,"\\title.md"))
+
+
+```
+
+
+# function for post creation
+
+
+```{r}
+
+generate_post <- function(category,cuisine) {
+  
+print(cuisine)
+  
+recipe <- ask_chatgpt(paste0("Give a recipe for burgers in the style of ",cuisine))
+title <- sub("\n.*", "", recipe)
+title <- sub("Recipe: ", "", title)
+title <- sub("Title: ", "", title)
+recipe_only <- sub(".*Ingredients:", "Ingredients: ", recipe)
+  
+description <- ask_chatgpt(paste0("Give a detailed and stylish description to go along with the recipe for ",title))
+
+create_and_download_image(paste0("Create a ultra realistic photo of a plated ",title," in an appetizing style for a food blog, professional food photography, 15mm"),paste0("static/",title,".png"))
+  
+header <- paste0("+++ title: '",title,"' 
+           author: 'Daljit Singh Johal'
+           date: ", Sys.Date()," 
+           output: html_document
+          +++") 
+
+md_file <- paste0("+++ 
+showonlyimage = true 
+draft = false 
+image = 'static/img/",title,".png
+date = '", Sys.time(),"' 
+title = '",title, "' 
+weight = 0
++++ 
+ 
+", description, " 
+
+![Image alt](/",title,".png '300px')
+
+", recipe_only)
+
+cat(md_file, file = paste0("C:\\Users\\dalji\\OneDrive\\Documents\\R\\bytebitefusion\\content\\home\\",title,".md"))
+cat(md_file, file = paste0("C:\\Users\\dalji\\OneDrive\\Documents\\R\\bytebitefusion\\content\\",category,"\\",title,".md"))
+  
+  
+}
+
+
+generate_post("burgers",sample(cuisines, size = 1))
+
+
+```
+
+
+
+
