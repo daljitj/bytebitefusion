@@ -140,7 +140,7 @@ description <- ask_chatgpt(paste0("Give a detailed and stylish description to go
 
 print("Generating Image")
 
-create_and_download_image(paste0("Create a ultra realistic photo of a plated ",title," in an appetizing style for a food blog, professional food photography, 15mm"),paste0("static/",title,".png"))
+create_and_download_image(paste0("Create a ultra realistic photo of a plated ",title," in an appetizing style for a food blog, professional food photography, 15mm"),paste0("static/",gsub(" ", "_", tolower(title)),".png"))
 
 print("Stitching Markdown File")
 
@@ -154,7 +154,7 @@ header <- paste0("+++ title: '",title,"'
 md_file <- paste0("+++ 
 showonlyimage = true 
 draft = false 
-image = 'static/img/",gsub(" ", "_", tolower(title)),"'.png
+image = 'static/img/",gsub(" ", "_", tolower(title)),".png'
 date = '", Sys.time(),"' 
 title = '",title, "' 
 weight = 0
