@@ -144,7 +144,7 @@ header <- paste0("+++ title: '",title,"'
 md_file <- paste0("+++ 
 showonlyimage = true 
 draft = false 
-image = 'static/img/",title,".png
+image = 'static/img/",title,"'.png
 date = '", Sys.time(),"' 
 title = '",title, "' 
 weight = 0
