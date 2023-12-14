@@ -19,7 +19,7 @@ Each bite of the Lahori Style Spicy Lamb Burger is a delightful orchestra of fla
 
 Indulge in the decadence of the Lahori Style Spicy Lamb Burgers, where rustic street food charm meets modern gourmet sophistication, where every bite is an invitation to embrace spice and everything nice! 
 
-![alt text](static/img/grumpy_gardening_badger.png)
+![alt text](static/grumpy_gardening_badger.png)
 
 Ingredients: 
 - 500 Grams Ground Lamb
