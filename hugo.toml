@@ -16,7 +16,9 @@ googleAnalytics = ""
   style = "red"
   description = "Describe your website"
   copyright = "&copy;2023 ByteBiteFusion"
-  sidebarAbout = [Flavors Without Borders: Using AI to invent and illustrate regional twists on popular dishes"]
+  sidebarAbout = [
+Flavors Without Borders: Using AI to invent and illustrate regional twists on popular dishes
+]
 
   # Contact page
      # Since this template is static, the contact form uses www.formspree.io as a
