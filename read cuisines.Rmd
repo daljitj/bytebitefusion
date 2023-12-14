@@ -73,7 +73,7 @@ cuisines <- cuisines[which(!grepl("Cuisine of ",cuisines$V1)),]
 
 ```{r}
 
-recipe <- ask_chatgpt(paste0("Give a recipe for burgers in the style of ",sample(cuisines, size = 1)))
+recipe <- ask_chatgpt(paste0("Give a recipe for burgers in the style of Panamanian cuisine"))
 title <- sub("\n.*", "", recipe)
 title <- sub("Recipe: ", "", title)
 title <- sub("Title: ", "", title)
@@ -81,7 +81,7 @@ recipe_only <- sub(".*Ingredients:", "Ingredients: ", recipe)
   
 description <- ask_chatgpt(paste0("Give a detailed and stylish description to go along with the recipe for ",title))
 
-create_and_download_image(paste0("Create a ultra realistic photo of a plated ",title," in an appetizing style for a food blog, professional food photography, 15mm"),paste0("static/",title,".png"))
+create_and_download_image(paste0("Create a ultra realistic photo of a plated ",title,"which is made with the follwing recipe",recipe_only," in an appetizing style for a food blog, professional food photography, 15mm"),paste0("static/",title,".png"))
 
 ```
 
@@ -137,11 +137,11 @@ title <- sub("Title: ", "", title)
 title <- sub("Recipe for ", "", title)
 recipe_only <- sub(".*Ingredients:", "Ingredients: ", recipe)
   
-description <- ask_chatgpt(paste0("Give a detailed and stylish description to go along with the recipe for ",title))
+description <- ask_chatgpt(paste0("Give a detailed and stylish description to go along with the recipe for ",title,"which is made with the follwing recipe",recipe_only))
 
 print("Generating Image")
 
-create_and_download_image(paste0("Create a ultra realistic photo of a plated ",title," in an appetizing style for a food blog, professional food photography, 15mm"),paste0("static/",gsub(" ", "_", tolower(title)),".png"))
+create_and_download_image(paste0("Create a ultra realistic photo of a plated ",title,"which is made with the follwing recipe",recipe_only," in an appetizing style for a food blog, professional food photography, 15mm"),paste0("static/",gsub(" ", "_", tolower(title)),".png"))
 
 print("Stitching Markdown File")
 
@@ -175,14 +175,16 @@ cat(md_file, file = paste0("C:\\Users\\dalji\\OneDrive\\Documents\\R\\bytebitefu
 
 
 
-generate_post("fried_chicken",sample(cuisines, size = 1))
+#generate_post("ramen",sample(cuisines, size = 1))
 
 
 # loop for multiple
 
+categories = c("burgers","fried_chicken","meat_pies","tacos","pizza","ramen","tacos")
+
 for (i in c(sample(cuisines, size = 3))) {
   
-  generate_post("fried_chicken",i)
+  generate_post(sample(categories, size = 1),i)
   
 }
 
