@@ -1,0 +1,46 @@
+
+
+## function for chatgpt prompting
+
+```{r}
+
+library(httr)
+library(stringr)
+
+my_key = readLines("api_key.txt")
+
+# api key
+api_key <- my_key
+
+```
+
+
+## Image generation function
+
+```{r}
+
+
+create_and_download_image <- function(prompt,path) {
+response <- POST(
+  url = "https://api.openai.com/v1/images/generations", 
+  add_headers(Authorization = paste("Bearer", api_key)),
+  content_type_json(),
+  encode = "json",
+  body = list(
+    model = "dall-e-3",
+     prompt=prompt,
+  size="1024x768",
+  quality="standard",
+  n=1
+  )
+)
+
+
+download.file(content(response)$data[[1]]$url, destfile = path,mode = 'wb')
+  
+}
+
+create_and_download_image("a multi limbed chef robot working on multiple dishes with the flags of many countries across its body","images/chef_robot.png")
+
+
+```
