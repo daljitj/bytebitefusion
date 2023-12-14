@@ -1,6 +1,6 @@
 [build]
-publish = "bytebitefusion"  // default hugo build folder
-command = "hugo --gc --minify" // hugo build command
+publish = "bytebitefusion"
+command = "hugo --gc --minify"
 
 [context.production.environment]
 HUGO_VERSION = "0.62.1"
