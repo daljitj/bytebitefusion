@@ -1,5 +1,5 @@
 
-baseurl = 'https://bytebitefusion.netlify.app'
+baseurl = 'https://daljitj.github.io/bytebitefusion/home/'
 languageCode = 'en-us'
 title = 'ByteBiteFusion'
 theme = "hugo-creative-portfolio-theme"
