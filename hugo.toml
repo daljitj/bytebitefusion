@@ -50,13 +50,13 @@ googleAnalytics = ""
 
  [[params.navlinks]]
   name = "Burgers"
-  url = "bytebitefusion/content/burgers/"
+  url = "/content/burgers/"
 
  [[params.navlinks]]
   name = "Pizza"
-  url = "bytebitefusion/content/pizza/"
+  url = "/content/pizza/"
 
  [[params.navlinks]]
   name = "About"
-  url = "bytebitefusion/content/about/"
+  url = "/content/about/"
 
