@@ -40,7 +40,7 @@ download.file(content(response)$data[[1]]$url, destfile = path,mode = 'wb')
   
 }
 
-create_and_download_image("an international multi limbed chef robot working on multiple dishes with the flags of many countries across its body","static/chef_robot_v3.png")
+create_and_download_image("a  cartoony international multi limbed chef robot working on multiple dishes with the flags of many countries across its body","static/chef_robot_v7.png")
 
 
 ```

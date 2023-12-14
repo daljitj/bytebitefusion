@@ -58,6 +58,18 @@ googleAnalytics = ""
   url = "pizza/"
 
  [[params.navlinks]]
+  name = "Tacos"
+  url = "tacos/"
+
+ [[params.navlinks]]
+  name = "Sushi"
+  url = "sushi/"
+
+ [[params.navlinks]]
+  name = "Fried Chicken"
+  url = "fried_chicken/"
+
+ [[params.navlinks]]
   name = "About"
   url = "about/"
 
