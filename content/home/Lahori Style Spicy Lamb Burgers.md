@@ -1,7 +1,7 @@
 +++ 
 showonlyimage = false 
 draft = false 
-image = 'static/img/burgers/grumpy_gardening_badger.png' 
+image = '/static/img/grumpy_gardening_badger.png' 
 date = '2023-12-14 00:31:17.030039' 
 title = 'Lahori Style Spicy Lamb Burgers' 
 weight = 1
