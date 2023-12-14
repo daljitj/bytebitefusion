@@ -81,6 +81,6 @@ googleAnalytics = ""
   name = "About"
   url = "about/"
 
-
-linkedin      = "https://www.linkedin.com/in/daljitsinghjohal/"
+[params.social]
+linkedin = "https://www.linkedin.com/in/daljitsinghjohal/"
 
