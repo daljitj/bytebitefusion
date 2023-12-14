@@ -70,6 +70,10 @@ googleAnalytics = ""
   url = "fried_chicken/"
 
  [[params.navlinks]]
+  name = "Meat Pies"
+  url = "meat_pies/"
+
+ [[params.navlinks]]
   name = "About"
   url = "about/"
 
