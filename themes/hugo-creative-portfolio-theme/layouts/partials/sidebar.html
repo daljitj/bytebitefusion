@@ -4,8 +4,6 @@
     {{ range .Site.Params.sidebarAbout }}
       <p class="sidebar-p">{{ . | safeHTML }}</p>
     {{ end }}
-  <img src="/chef_robot_v6.png" alt="Alt Text">
-
     <ul class="sidebar-menu">
       {{ range .Site.Params.navlinks }}
         <li><a href="{{ absURL .url }}">{{ .name }}</a></li>
@@ -13,6 +11,7 @@
     </ul>
     {{ partial "social_buttons_in_sidebar.html" . }}
 
+  <img src="/chef_robot_v5.png" alt="Alt Text">
 
 
     <div class="copyright">
