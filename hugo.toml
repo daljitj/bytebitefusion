@@ -16,14 +16,8 @@ googleAnalytics = ""
   style = "red"
   description = "Describe your website"
   copyright = "&copy;2023 ByteBiteFusion"
-  sidebarAbout = ["""
-    Flavors Without Borders: Using AI to invent and illustrate regional twists on popular dishes"
-    
-    "Food is not static; it's an ever-evolving palette of possibilities. Fusion food is a celebration of culinary diversity, a shared cross cultural dialogue that bridges traditions and drives innovation. With the power of AI we can imagine and illustrate potential fusions across a range of dishes with regional variations that no singular person could have enough knowledge to invent"
+  sidebarAbout = [Flavors Without Borders: Using AI to invent and illustrate regional twists on popular dishes"]
 
- Use common sense and caution on temperatures and cooking times if using these recipes"
-"""
-  ]
   # Contact page
      # Since this template is static, the contact form uses www.formspree.io as a
      # proxy. The form makes a POST request to their servers to send the actual
