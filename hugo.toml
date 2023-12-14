@@ -1,5 +1,5 @@
 
-baseurl = 'bytebitefusion.netlify.app'
+baseurl = 'https://daljitj.github.io/bytebitefusion/home/'
 languageCode = 'en-us'
 title = 'ByteBiteFusion'
 theme = "hugo-creative-portfolio-theme"
@@ -44,19 +44,19 @@ googleAnalytics = ""
   # Nav links in the side bar
   [[params.navlinks]]
   name = "Home"
-  url = "home/"
+  url = "content/home/"
   home = true
 
 
  [[params.navlinks]]
   name = "Burgers"
-  url = "burgers/"
+  url = "content/burgers/"
 
  [[params.navlinks]]
   name = "Pizza"
-  url = "pizza/"
+  url = "content/pizza/"
 
  [[params.navlinks]]
   name = "About"
-  url = "about/"
+  url = "content/about/"
 
