@@ -6,8 +6,10 @@
 library(httr)
 library(stringr)
 
+my_key = readLines("api_key.txt")
+
 # api key
-api_key <- "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"
+api_key <- my_key
 
 
 # Calls the ChatGPT API with the given prompt and returns the answer
