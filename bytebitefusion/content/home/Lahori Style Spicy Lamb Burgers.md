@@ -1,11 +1,11 @@
-+++ 
+---
 showonlyimage = true 
 draft = false 
 image = 'static/img/burgers/grumpy_gardening_badger.png' 
 date = '2023-12-14 00:31:17.030039' 
 title = 'Lahori Style Spicy Lamb Burgers' 
 weight = 0
-+++ 
+---
  
 Immerse yourself in a captivating culinary journey with our recipe for Lahori Style Spicy Lamb Burgers. Inspired by the bustling spice markets of Lahore, these sumptuous burgers boast an exotic blend of flavors designed to awaken and tantalize your senses, enticing echoes of far-off destinations.
 
