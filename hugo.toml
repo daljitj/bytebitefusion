@@ -17,10 +17,8 @@ googleAnalytics = ""
   description = "Describe your website"
   copyright = "&copy;2023 ByteBiteFusion"
   sidebarAbout = [
-    "Flavors Without Borders: Using AI to imagine regional twists on classic dishes
+    "Flavors Without Borders: Using AI to imagine regional twists on classic dishes. \n Food is not static; it's an ever-evolving palette of possibilities. Fusion food  is a celebration of culinary diversity, a shared cross cultural dialogue, a bridge between traditions and a vehicle for enhancing innovation. With the power of AI we can imagine and illustrate potential fusions across a range of dishes with regional variations that no singular person could have enough knowledge to invent."
 
-     Food is not static; it's an ever-evolving palette of possibilities. Fusion food reflects the ongoing exchange of ideas and ingredients, a shared cross cultural dialogue enhancing innovation and enrich ordinary lives. 
-     With the power of AI we can imagine and illustrate potential fusions across a range of dishes with regional variations that no singular person could have enough knowledge to invent."
   ]
   # Contact page
      # Since this template is static, the contact form uses www.formspree.io as a
