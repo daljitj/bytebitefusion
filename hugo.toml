@@ -8,7 +8,7 @@ canonifyURLs = true
 # Enable comments by entering your Disqus shortname
 disqusShortname = ""
 # Enable Google Analytics by entering your tracking code
-googleAnalytics = ""
+googleAnalytics = "G-JJZ1T39EZ9"
 
 [params]
   # Style options: default (pink), blue, green, pink, red, sea, violet
