@@ -1,5 +1,5 @@
 +++ 
-showonlyimage = true 
+showonlyimage = false 
 draft = false 
 image = 'danish_style_ramen_recipe_.png'
 date = '2023-12-15 00:59:33.506893' 
