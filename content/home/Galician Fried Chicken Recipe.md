@@ -2,7 +2,7 @@
 showonlyimage = true 
 draft = false 
 image = 'galician_fried_chicken_recipe.png'
-date = '2023-12-14 16:37:52.48781' 
+date = '2023-12-15 00:59:52.48781' 
 title = 'Galician Fried Chicken Recipe' 
 weight = 0
 +++ 
