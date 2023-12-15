@@ -6,7 +6,6 @@
       <p class="sidebar-p">{{ . | safeHTML }}</p>
     {{ end }}
     <ul class="sidebar-menu">
-      <img src="/chef_robot_v5.png" alt="Alt Text">
   {{ range .Site.Params.navlinks }}
         <li><a href="{{ absURL .url }}">{{ .name }}</a></li>
       {{ end }}
