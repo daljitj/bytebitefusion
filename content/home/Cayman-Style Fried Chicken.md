@@ -1,8 +1,8 @@
 +++ 
-showonlyimage = true 
+showonlyimage = false 
 draft = false 
 image = 'cayman-style_fried_chicken.png'
-date = '2023-12-15 00:45:46.600533' 
+date = '2023-12-15 01:18:51.290504'
 title = 'Cayman-Style Fried Chicken' 
 weight = 0
 +++ 
