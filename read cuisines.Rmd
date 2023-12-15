@@ -64,6 +64,7 @@ download.file(content(response)$data[[1]]$url, destfile = path,mode = 'wb')
 
 cuisines <- read.csv("list_of_cuisines.csv", header=FALSE, stringsAsFactors=FALSE, fileEncoding="latin1")
 cuisines <- cuisines[which(!grepl("Cuisine of ",cuisines$V1)),]
+cuisines <- cuisines[which(!grepl("Cuisine of ",cuisines$V1)),]
 
 
 ```
@@ -175,14 +176,14 @@ cat(md_file, file = paste0("C:\\Users\\dalji\\OneDrive\\Documents\\R\\bytebitefu
 
 
 
-#generate_post("ramen",sample(cuisines, size = 1))
+#generate_post("fried_chicken",sample(cuisines, size = 1))
 
 
 # loop for multiple
 
-categories = c("burgers","fried_chicken","meat_pies","tacos","pizza","ramen","tacos")
+categories = c("burgers","fried_chicken","meat_pies","pizza","ramen","tacos")
 
-for (i in c(sample(cuisines, size = 3))) {
+for (i in c(sample(cuisines, size = 10))) {
   
   generate_post(sample(categories, size = 1),i)
   
