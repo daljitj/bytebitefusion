@@ -1,5 +1,5 @@
 
-## function for chatgpt prompting
+## functions for chatgpt and dalle prompting
 
 ```{r}
 
@@ -30,12 +30,11 @@ ask_chatgpt <- function(prompt) {
   str_trim(content(response)$choices[[1]]$message$content)
 }
 
-```
 
 
 ## Image generation function
 
-```{r}
+
 
 
 create_and_download_image <- function(prompt,path) {
@@ -60,10 +59,13 @@ download.file(content(response)$data[[1]]$url, destfile = path,mode = 'wb')
 
 ```
 
+
+# read cuisine list 
+
+
 ```{r}
 
 cuisines <- read.csv("list_of_cuisines.csv", header=FALSE, stringsAsFactors=FALSE, fileEncoding="latin1")
-cuisines <- cuisines[which(!grepl("Cuisine of ",cuisines$V1)),]
 cuisines <- cuisines[which(!grepl("Cuisine of ",cuisines$V1)),]
 
 
@@ -138,11 +140,11 @@ title <- sub("Title: ", "", title)
 title <- sub("Recipe for ", "", title)
 recipe_only <- sub(".*Ingredients:", "Ingredients: ", recipe)
   
-description <- ask_chatgpt(paste0("Give a detailed and stylish description to go along with the recipe for ",title,"which is made with the follwing recipe",recipe_only))
+description <- ask_chatgpt(paste0("Give a detailed and stylish description to go along with the recipe for ",title,"which is made with the following recipe",recipe_only))
 
 print("Generating Image")
 
-create_and_download_image(paste0("Create a ultra realistic photo of a plated ",title,"which is made with the follwing recipe",recipe_only," in an appetizing style for a food blog, professional food photography, 15mm"),paste0("static/",gsub(" ", "_", tolower(title)),".png"))
+create_and_download_image(paste0("Create a ultra realistic photo of a plated ",title,"which is made with the following recipe",recipe_only," in an appetizing style for a food blog, professional food photography, 15mm"),paste0("static/",gsub(" ", "_", tolower(title)),".png"))
 
 print("Stitching Markdown File")
 
@@ -176,21 +178,91 @@ cat(md_file, file = paste0("C:\\Users\\dalji\\OneDrive\\Documents\\R\\bytebitefu
 
 
 
-generate_post("fried_chicken",sample(cuisines, size = 1))
+generate_post("christmas_dinner",sample(cuisines, size = 1))
+generate_post("christmas_dinner",sample(cuisines, size = 1))
 
 
 # loop for multiple
 
 categories = c("burgers","fried_chicken","meat_pies","pizza","ramen","tacos")
 
-for (i in c(sample(cuisines, size = 10))) {
+for (i in c(sample(cuisines, size = 4))) {
   
   generate_post(sample(categories, size = 1),i)
   
 }
 
+
+
+
 ```
 
 
 
+
+
+## more general prompt for posts
+
+
+```{r}
+
+generate_post <- function() {
+
+print("Generating Recipe")
+    
+recipe <- ask_chatgpt(paste0("Create a recipe for  dishes that are a fusion with a random very regionally specific cuisines from around the world"))
+title <- sub("\n.*", "", recipe)
+title <- sub(".*: ", "", title)
+title <- sub("Recipe: ", "", title)
+title <- sub("Recipe Name: ", "", title)
+title <- sub("Title: ", "", title)
+title <- sub("Recipe for ", "", title)
+recipe_only <- sub(".*Ingredients:", "Ingredients: ", recipe)
+
+print(title)
+print("Writing Description")
+
+description <- ask_chatgpt(paste0("Give a detailed and stylish description to go along with the recipe for ",title,"which is made with the following recipe",recipe_only))
+
+
+print("Generating Image")
+
+create_and_download_image(paste0("Create a ultra realistic photo of a plated ",title,"which is made with the following recipe",recipe_only," in an appetizing style for a food blog, professional food photography, 15mm"),paste0("static/",gsub(" ", "_", tolower(title)),".png"))
+
+print("Stitching Markdown File")
+
+  
+header <- paste0("+++ title: '",title,"' 
+           author: 'Daljit Singh Johal'
+           date: ", Sys.Date()," 
+           output: html_document
+          +++") 
+
+md_file <- paste0("+++ 
+showonlyimage = false 
+draft = false 
+image = '",gsub(" ", "_", tolower(title)),".png'
+date = '", Sys.time(),"' 
+title = '",title, "' 
+weight = 0
++++ 
+ 
+", description, " 
+
+![Image alt](/",gsub(" ", "_", tolower(title)),".png '300px')
+
+", recipe_only)
+
+cat(md_file, file = paste0("C:\\Users\\dalji\\OneDrive\\Documents\\R\\bytebitefusion\\content\\home\\",title,".md"))
+
+}
+
+
+
+for (i in 1:5) {
+  generate_post()
+}
+
+
+```
 
