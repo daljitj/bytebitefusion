@@ -239,7 +239,7 @@ header <- paste0("+++ title: '",title,"'
           +++") 
 
 md_file <- paste0("+++ 
-showonlyimage = true 
+showonlyimage = false 
 draft = false 
 image = '",gsub(" ", "_", tolower(title)),".png'
 date = '", Sys.time(),"' 
