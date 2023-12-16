@@ -6,6 +6,9 @@ date = '2023-12-16 14:06:21.629091'
 title = 'Basque-Thai Coconut Cod' 
 weight = 0
 +++ 
+
+<!--more-->
+
  
 This imaginative dish marvellously merges the culinary crafts of Spain's Basque region with the aromatic allure of Thai food - Basque-Thai Coconut Cod. Fresh cod fillets are carefully seasoned with salt and pepper, encapsulating the tang of the sea in each piece. The cod is then seared to perfection in a layer of warm olive oil, resulting in a beautifully firm texture that retains its succulent juiciness.
 
