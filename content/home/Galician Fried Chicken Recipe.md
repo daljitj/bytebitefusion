@@ -1,11 +1,14 @@
 +++ 
-showonlyimage = true 
+showonlyimage = false 
 draft = false 
 image = 'galician_fried_chicken_recipe.png'
 date = '2023-12-14 00:59:52.48781' 
 title = 'Galician Fried Chicken Recipe' 
 weight = 0
 +++ 
+
+<!--more-->
+
  
 Indulge yourself with the mesmerizing flavors of Spanish cuisine by trying out this sumptuous Galician Fried Chicken Recipe. This mouth-watering delicacy originates from Galicia, a region in northwest Spain known for its unique and traditional richness in cuisine. 
 

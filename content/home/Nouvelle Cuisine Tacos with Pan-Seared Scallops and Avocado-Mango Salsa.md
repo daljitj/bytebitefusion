@@ -1,11 +1,14 @@
 +++ 
-showonlyimage = true 
+showonlyimage = false 
 draft = false 
 image = 'nouvelle_cuisine_tacos_with_pan-seared_scallops_and_avocado-mango_salsa.png'
 date = '2023-12-15 00:26:47.440544' 
 title = 'Nouvelle Cuisine Tacos with Pan-Seared Scallops and Avocado-Mango Salsa' 
 weight = 0
 +++ 
+
+<!--more-->
+
  
 Capture the flavors of summer all year round with these Nouvelle Cuisine Tacos featuring Pan-Seared Scallops and Avocado-Mango Salsa. This recipe takes an animated twist on the classic Mexican street food, infusing it with an epitome of flair and fancy. The delicacy of the fresh, pan-seared scallops pairs brilliantly with the bright, sweet, and slightly spicy salsa making for an absolutely delightful bite.
 

@@ -1,11 +1,13 @@
 +++ 
-showonlyimage = true 
+showonlyimage = false 
 draft = false 
 image = 'haitian_style_black_bean_burgers.png'
 date = '2023-12-15 00:21:24.037319' 
 title = 'Haitian Style Black Bean Burgers' 
 weight = 0
 +++ 
+
+<!--more-->
  
 Indulge yourself in a globally inspired feast straight from the heart of the Caribbean islands, as we guide you through our recipe for Haitian Style Black Bean Burgers. Bursting with bold flavors and packed full of texture, these vegetarian burgers offer a perfect blend of nutrition and a touch of heat that leaves an indelible mark on your tastebuds. 
 

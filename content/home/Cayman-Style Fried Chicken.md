@@ -6,6 +6,9 @@ date = '2023-12-15 01:18:51.290504'
 title = 'Cayman-Style Fried Chicken' 
 weight = 0
 +++ 
+
+<!--more-->
+
  
 Indulge in the vibrant flavors of the Caribbean with this recipe for Cayman-Style Fried Chicken! Tender, succulent strips of boneless chicken breast are marinated for hours in a stimulating blend of buttermilk, minced garlic, hand-chopped onions, and Scotch bonnet peppers. This ensnares the chicken in a flavourful nest, letting the juices penetrate every fiber for an incomparable taste. 
 

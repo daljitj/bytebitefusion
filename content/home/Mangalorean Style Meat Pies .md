@@ -1,11 +1,14 @@
 +++ 
-showonlyimage = true 
+showonlyimage = false 
 draft = false 
 image = 'mangalorean_style_meat_pies_.png'
 date = '2023-12-15 00:30:58.196787' 
 title = 'Mangalorean Style Meat Pies ' 
 weight = 0
 +++ 
+
+<!--more-->
+
  
 Indulge in the artistry of traditional cuisine with this Mangalorean Style Meat Pie recipe. This savory treat harmoniously marries the rustic charm of Mangalorean flavors with the comfort of delectable pies. 
 

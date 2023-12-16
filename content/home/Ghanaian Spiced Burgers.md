@@ -1,11 +1,13 @@
 +++ 
-showonlyimage = true 
+showonlyimage = false 
 draft = false 
 image = 'ghanaian_spiced_burgers.png'
 date = '2023-12-15 00:20:27.870277' 
 title = 'Ghanaian Spiced Burgers' 
 weight = 0
 +++ 
+
+<!--more-->
  
 Prepare to tantalize your tastebuds with this sumptuous Ghanaian Spiced Burger. This exemplary blend of sizzling spices and robust flavors transports you to the enchanting West Coast of Africa in the comfort of your own home.
 

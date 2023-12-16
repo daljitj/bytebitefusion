@@ -1,11 +1,13 @@
 +++ 
-showonlyimage = true 
+showonlyimage = false 
 draft = false 
 image = 'barbadian_fried_chicken_.png'
 date = '2023-12-15 00:22:15.643649' 
 title = 'Barbadian Fried Chicken ' 
 weight = 0
 +++ 
+
+<!--more-->
  
 Experience the sun-soaked beauty of the Barbadian islands on your plate with Barbadian Fried Chicken. This tantalizing dish is a spectacular blend of Caribbean flavors and textures, delivering a taste symphony of crisp, tender, and spicy notes that invoke memories of sea, sand, and tropical pleasure.
 

@@ -6,6 +6,9 @@ date = '2023-12-16 13:25:26.515485'
 title = 'Greek-Schezuan Spicy Shrimp Gyro' 
 weight = 0
 +++ 
+
+<!--more-->
+
  
 Exuding a dynamic fusion of Grecian charisma and Schezuan fervour, this Greek-Schezuan Spicy Shrimp Gyro recipe takes your everyday gyro on a culinary globetrot to yield an irresistibly eclectic creation. 
 

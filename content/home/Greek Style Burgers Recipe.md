@@ -1,11 +1,14 @@
 +++ 
-showonlyimage = true 
+showonlyimage = false 
 draft = false 
 image = 'greek_style_burgers_recipe.png'
 date = '2023-12-15 01:49:56.756233' 
 title = 'Greek Style Burgers Recipe' 
 weight = 0
 +++ 
+
+<!--more-->
+
  
 Fine-tuned with flavors straight from the exquisite Mediterranean palate, the Greek Style Burger injects a novel twist on an old favorite. This recipe is a fusion of familiar comfort and exotic vivaciousness that promises to please. 
 

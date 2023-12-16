@@ -239,13 +239,16 @@ header <- paste0("+++ title: '",title,"'
           +++") 
 
 md_file <- paste0("+++ 
-showonlyimage = false 
+showonlyimage = true 
 draft = false 
 image = '",gsub(" ", "_", tolower(title)),".png'
 date = '", Sys.time(),"' 
 title = '",title, "' 
 weight = 0
 +++ 
+
+<!--more-->
+
  
 ", description, " 
 
@@ -259,7 +262,7 @@ cat(md_file, file = paste0("C:\\Users\\dalji\\OneDrive\\Documents\\R\\bytebitefu
 
 
 
-for (i in 1:5) {
+for (i in 1:2) {
   generate_post()
 }
 

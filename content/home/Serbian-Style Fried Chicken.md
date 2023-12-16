@@ -1,11 +1,14 @@
 +++ 
-showonlyimage = true 
+showonlyimage = false 
 draft = false 
 image = 'serbian-style_fried_chicken.png'
 date = '2023-12-15 00:45:46.600533' 
 title = 'Serbian-Style Fried Chicken' 
 weight = 0
 +++ 
+
+<!--more-->
+
  
 Indulge in the cultural richness of Balkan cuisine with this coupling of interesting flavors and traditions in our Serbian-Style Fried Chicken. This recipe marries the comfort of fried chicken with a unique Serbian twist that will bring a symphony of flavors to your dining table.
 
