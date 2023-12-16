@@ -24,22 +24,24 @@ This avant-garde fusion of Japanese sushi and Louisiana's Cajun captivates your 
 ![Image alt](/cajun_sushi_(a_fusion_of_louisiana_cajun_and_japanese_cuisine).png '300px')
 
 Ingredients: 
--2 cups sushi rice
--2 1/2 cups water
--1/2 cup rice vinegar
--2 tablespoons sugar
--1 tablespoon salt
--10 sheets seaweed (nori)
--1 cup cooked crawfish tails
--1 cup alligator meat, cooked and chopped
--1 whole avocado, sliced thin
--1 cucumber, deseeded and julienned
--2 tablespoons Cajun seasoning
--Ebi (shrimp) for topping 
+
+- 2 cups sushi rice
+- 2 1/2 cups water
+- 1/2 cup rice vinegar
+- 2 tablespoons sugar
+- 1 tablespoon salt
+- 10 sheets seaweed (nori)
+- 1 cup cooked crawfish tails
+- 1 cup alligator meat, cooked and chopped
+- 1 whole avocado, sliced thin
+- 1 cucumber, deseeded and julienned
+- 2 tablespoons Cajun seasoning
+- Ebi (shrimp) for topping 
 - Spicy mayonnaise for serving
 - Soy sauce for serving
 
 Instructions:
+
 1. Rinse the sushi rice under cold water until the water runs clear. Then cook it in a rice cooker with the 2 1/2 cups of water.
 2. While rice is being cooked, in a small saucepan, combine rice vinegar, sugar and salt. Heat over medium until sugar and salt dissolves. Set it aside to cool.
 3. When the rice is finished cooking, move it to a wooden or glass bowl (avoid metal) and slowly add in the cooled vinegar mixture while stirring the rice gently. This is sushi rice.
