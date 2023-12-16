@@ -1,5 +1,5 @@
 +++ 
-showonlyimage = true 
+showonlyimage = false 
 draft = false 
 image = 'tex-mex_moroccan_tagine.png'
 date = '2023-12-16 13:29:53.058571' 
