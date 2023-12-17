@@ -2,7 +2,7 @@
 showonlyimage = false 
 draft = false 
 image = 'ukrainian_pierogi_meets_indian-style_filling.png'
-date = '2023-12-17 01:21:52.360155' 
+date = '2023-12-17 01:06:31.921894' 
 title = 'Ukrainian Pierogi Meets Indian-style Filling' 
 weight = 0
 +++ 
