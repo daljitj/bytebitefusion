@@ -166,7 +166,7 @@ weight = 0
  
 ", description, " 
 
-![Image alt](/",gsub(" ", "_", tolower(title)),".png '300px')
+![Image alt](/",gsub(" ", "_", tolower(title)),".png)
 
 ", recipe_only)
 
@@ -252,7 +252,7 @@ weight = 0
  
 ", description, " 
 
-![Image alt](/",gsub(" ", "_", tolower(title)),".png '300px')
+![Image alt](/",gsub(" ", "_", tolower(title)),".png)
 
 ", recipe_only)
 
@@ -264,6 +264,76 @@ cat(md_file, file = paste0("C:\\Users\\dalji\\OneDrive\\Documents\\R\\bytebitefu
 
 for (i in 1:2) {
   generate_post()
+}
+
+
+```
+
+
+
+## more general prompt with specified cuisine for posts
+
+
+```{r}
+
+generate_post <- function(cuisine) {
+
+print("Generating Recipe")
+    
+recipe <- ask_chatgpt(paste0("Create a recipe for a dish that is a fusion of",cuisine," with a random other very regionally specific cuisine from around the world"))
+title <- sub("\n.*", "", recipe)
+title <- sub(".*: ", "", title)
+title <- sub("Recipe: ", "", title)
+title <- sub("Recipe Name: ", "", title)
+title <- sub("Title: ", "", title)
+title <- sub("Recipe for ", "", title)
+recipe_only <- sub(".*Ingredients:", "Ingredients: ", recipe)
+
+print(title)
+print("Writing Description")
+
+description <- ask_chatgpt(paste0("Give a detailed and stylish description to go along with the recipe for ",title,"which is made with the following recipe",recipe_only))
+
+
+print("Generating Image")
+
+create_and_download_image(paste0("Create a ultra realistic photo of a plated ",title,"which is made with the following recipe",recipe_only," in an appetizing style for a food blog, professional food photography, 15mm"),paste0("static/",gsub(" ", "_", tolower(title)),".png"))
+
+print("Stitching Markdown File")
+
+  
+header <- paste0("+++ title: '",title,"' 
+           author: 'Daljit Singh Johal'
+           date: ", Sys.Date()," 
+           output: html_document
+          +++") 
+
+md_file <- paste0("+++ 
+showonlyimage = false 
+draft = false 
+image = '",gsub(" ", "_", tolower(title)),".png'
+date = '", Sys.time(),"' 
+title = '",title, "' 
+weight = 0
++++ 
+
+<!--more-->
+
+ 
+", description, " 
+
+![Image alt](/",gsub(" ", "_", tolower(title)),".png)
+
+", recipe_only)
+
+cat(md_file, file = paste0("C:\\Users\\dalji\\OneDrive\\Documents\\R\\bytebitefusion\\content\\home\\",title,".md"))
+
+}
+
+
+
+for (i in 1:2) {
+  generate_post(sample(cuisines, size = 1))
 }
 
 
