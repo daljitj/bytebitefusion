@@ -53,7 +53,7 @@ response <- POST(
 )
 
 
-download.file(content(response)$data[[1]]$url, destfile = path,mode = 'wb')
+download.file(httr::content(response)$data[[1]]$url, destfile = path,mode = 'wb')
   
 }
 
@@ -76,7 +76,7 @@ cuisines <- cuisines[which(!grepl("Cuisine of ",cuisines$V1)),]
 
 ```{r}
 
-recipe <- ask_chatgpt(paste0("Give a recipe for burgers in the style of Panamanian cuisine"))
+recipe <- ask_chatgpt(paste0("Give a recipe for burgers in the style of Mauritian cuisine"))
 title <- sub("\n.*", "", recipe)
 title <- sub("Recipe: ", "", title)
 title <- sub("Title: ", "", title)
