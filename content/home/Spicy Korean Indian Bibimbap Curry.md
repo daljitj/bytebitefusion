@@ -1,7 +1,7 @@
 +++ 
 showonlyimage = false 
 draft = false 
-image = 'spicy_korean-indian_bibimbap_curry.png'
+image = 'spicy_korean_indian_bibimbap_curry.png'
 date = '2024-05-04 00:53:56.679651' 
 title = 'Spicy Korean-Indian Bibimbap Curry' 
 weight = 0
